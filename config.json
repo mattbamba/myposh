@@ -10,7 +10,6 @@
             "leading_diamond": "\ue0b6",
             "style": "diamond",
             "template": "{{ .Icon }} {{ .HostName }} ",
-            // "trailing_diamond": "\ue0b0",
             "type": "os"
           },
           {
