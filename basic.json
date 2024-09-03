@@ -1,0 +1,100 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "patch_pwsh_bleed": true,
+    "blocks": [
+        {
+            "alignment": "left",
+            "leading_diamond": "",
+            "trailing_diamond": "",
+            "segments": [
+                {
+                    "type": "session",
+                    "style": "plain",
+                    "foreground": "#62e756",
+                    "background": "transparent",
+                    "template": "\u256d\u2500"
+                },
+                {
+                    "type": "root",
+                    "style": "plain",
+                    "foreground": "red",
+                    "background": "transparent",
+                    "template": " \uedcf "
+                },
+                {
+                    "type": "os",
+                    "style": "plain",
+                    "foreground": "#62e756",
+                    "background": "transparent",
+                    "leading_diamond": "\ue0b6",
+                    "template": " {{ .UserName }}@{{ .HostName }}"
+                },
+                {
+                    "type": "path",
+                    "style": "plain",
+                    "foreground": "#62e756",
+                    "background": "transparent",
+                    "properties": {
+                        "folder_separator_icon": "\\",
+                        "home_icon": "\ueb06",
+                        "style": "full"
+                    },
+                    "template": " {{ .Path }}"
+                }
+            ],
+            "type": "prompt"
+        },
+        {
+            "alignment": "left",
+            "newline": true,
+            "segments": [
+                {
+                    "type": "text",
+                    "style": "plain",
+                    "foreground": "#62e756",
+                    "background": "transparent",
+                    "template": "\u2570\u2500"
+                },
+                {
+                    "type": "time",
+                    "style": "plain",
+                    "foreground": "#62e756",
+                    "background": "transparent",
+                    "properties": {
+                        "time_format": "<b>[2006-01-02 15:04:05]</b>"
+                    },
+                    "template": "{{ .CurrentDate | date .Format }}"
+                },
+                {
+                    "type": "executiontime",
+                    "style": "plain",
+                    "background": "transparent",
+                    "foreground": "#62e756",
+                    "properties": {
+                      "always_enabled": true
+                    },
+                    "template": " [{{ .FormattedMs }}]"
+                },
+                {
+                    "type": "text",
+                    "style": "plain",
+                    "foreground": "#62e756",
+                    "background": "transparent",
+                    "properties": {
+                        "always_enabled": true
+                    },
+                    "template": " \u276f"
+                }
+            ],
+            "type": "prompt"
+        }
+    ],
+    "transient_prompt": {
+        "background": "transparent",
+        "foreground": "#ffffff",
+        "template": "{{ .Shell }}> "
+    },
+    "console_title_template": "{{ .Shell }} in {{ .Folder }}",
+    "final_space": true,
+    "version": 2
+}
