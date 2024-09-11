@@ -49,6 +49,31 @@
             "newline": true,
             "segments": [
                 {
+                    "type": "git",
+                    "style": "plain",
+                    "foreground": "#62e756",
+                    "background": "transparent",
+                    "template": "\u2502 {{ .UpstreamIcon }}",
+                    "properties": {
+                      "fetch_status": true,
+                      "fetch_upstream_icon": true,
+                      "untracked_modes": {
+                      },
+                      "source": "pwsh",
+                      "mapped_branches": {
+                        "feat/*": "🚀 ",
+                        "bug/*": "🐛 "
+                      }
+                    }
+                }
+            ],
+            "type": "prompt"
+        },
+        {
+            "alignment": "left",
+            "newline": true,
+            "segments": [
+                {
                     "type": "text",
                     "style": "plain",
                     "foreground": "#62e756",
