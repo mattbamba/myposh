@@ -58,12 +58,13 @@
                       "fetch_status": true,
                       "fetch_upstream_icon": true,
                       "fetch_stash_count": true,
+                      "full_branch_path":true,
                       "untracked_modes": {
                       },
                       "source": "pwsh",
                       "mapped_branches": {
-                        "feat/*": "🚀 ",
-                        "bug/*": "🐛 "
+                        "feat/*": "\udb85\udcdf ",
+                        "bug/*": "\ueaaf "
                       }
                     }
                 }
