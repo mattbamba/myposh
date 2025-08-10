@@ -36,7 +36,7 @@
                     "background": "transparent",
                     "properties": {
                         "folder_separator_icon": "\\",
-                        "home_icon": "\ueb06",
+                        "home_icon": "~",
                         "style": "full"
                     },
                     "template": " {{ .Path }}"
@@ -93,3 +93,4 @@
     "final_space": true,
     "version": 2
 }
+
