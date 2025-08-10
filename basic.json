@@ -36,7 +36,7 @@
                     "background": "transparent",
                     "properties": {
                         "folder_separator_icon": "\\",
-                        "home_icon": "~",
+                        "home_icon": "\udb80\udedc",
                         "style": "full"
                     },
                     "template": " {{ .Path }}"
@@ -93,4 +93,5 @@
     "final_space": true,
     "version": 2
 }
+
 
